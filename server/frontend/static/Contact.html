@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        .contact-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+        .contact-info-card {
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin: 15px 0;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s;
+        }
+        .contact-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .contact-icon {
+            font-size: 2em;
+            color: #667eea;
+            margin-right: 20px;
+            min-width: 50px;
+        }
+        .contact-details h4 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .contact-details p {
+            color: #666;
+            margin: 0;
+        }
+        .map-section {
+            margin: 30px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Contact Page Content -->
+  <div class="card" style="width: 85%; margin: auto; margin-top:3%; margin-bottom: 3%; border: none;">
+    <div class="contact-header">
+      <h1 style="font-size: 2.5em; margin-bottom: 20px;">Contact Us</h1>
+      <p style="font-size: 1.2em;">We're here to help! Reach out to us through any of the following channels.</p>
+    </div>
+    
+    <div class="contact-info-card">
+      <!-- Phone Contact -->
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div class="contact-details">
+          <h4>Phone</h4>
+          <p>Toll Free: 1-800-BEST-CARS (1-800-237-8227)</p>
+          <p>Local: (555) 123-4567</p>
+          <p>Available: Mon-Sat 9AM-8PM, Sun 10AM-6PM EST</p>
+        </div>
+      </div>
+
+      <!-- Email Contact -->
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-details">
+          <h4>Email</h4>
+          <p>General Inquiries: info@bestcars.com</p>
+          <p>Sales: sales@bestcars.com</p>
+          <p>Support: support@bestcars.com</p>
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-details">
+          <h4>Headquarters</h4>
+          <p>123 Auto Drive, Suite 500</p>
+          <p>Detroit, MI 48201, USA</p>
+        </div>
+      </div>
+
+      <!-- Website -->
+      <div class="contact-item">
+        <div class="contact-icon">🌐</div>
+        <div class="contact-details">
+          <h4>Website</h4>
+          <p>www.bestcars.com</p>
+          <p>Visit us online for inventory, services, and more</p>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="contact-item">
+        <div class="contact-icon">💬</div>
+        <div class="contact-details">
+          <h4>Social Media</h4>
+          <p>Follow us: @BestCarsDealership</p>
+          <p>Facebook | Twitter | Instagram | LinkedIn</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Business Hours Section -->
+    <div class="map-section">
+      <h3 style="color: #333; margin-bottom: 20px;">Business Hours</h3>
+      <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; display: inline-block;">
+        <p style="margin: 5px 0;"><strong>Monday - Friday:</strong> 9:00 AM - 8:00 PM</p>
+        <p style="margin: 5px 0;"><strong>Saturday:</strong> 9:00 AM - 6:00 PM</p>
+        <p style="margin: 5px 0;"><strong>Sunday:</strong> 10:00 AM - 5:00 PM</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,7 +1,40 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <!-- Link the style sheet here -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        .about-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+        .team-card {
+            width: 30%;
+            margin: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+        .person-title {
+            font-weight: bold;
+            font-size: 1.3em;
+            color: #333;
+            margin-top: 10px;
+        }
+        .person-role {
+            color: #667eea;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+    </style>
 </head>
+<body>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
@@ -25,44 +58,47 @@
     </div>
   </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
-        </div>
-      </div>
-    </div>
-    </div>
+  <div class="card" style="width: 85%;margin: auto; margin-top:3%; margin-bottom: 3%; border: none;">
+    <div class="about-header" name="about-header">
+      <h1 style="font-size: 2.5em; margin-bottom: 20px;">About Us</h1>
+      <p style="font-size: 1.2em; line-height: 1.6;">Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices. With over 20 years of experience, our commitment to customer satisfaction and transparent service has made us a trusted name in the automotive industry.</p>
     </div>
     
+    <h2 style="text-align: center; margin: 40px 0 20px 0; color: #333;">Meet Our Leadership Team</h2>
+    
+    <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; margin:auto">
+      <div class="card team-card">
+        <img class="card-img-top" src="/static/person.png" alt="Michael Anderson" style="border-radius: 10px 10px 0 0;">
+        <div class="card-body" style="text-align: center;">
+          <p class="person-title">Michael Anderson</p>
+          <p class="person-role">Chief Executive Officer</p>
+          <p class="card-text">Michael brings 25 years of automotive industry experience. He leads our vision of providing exceptional customer service and building lasting relationships.</p>
+          <p style="color: #667eea; font-weight: 500;">michael.anderson@bestcars.com</p>
+        </div>
+      </div>
+
+      <div class="card team-card">
+        <img class="card-img-top" src="/static/person.png" alt="Sarah Martinez" style="border-radius: 10px 10px 0 0;">
+        <div class="card-body" style="text-align: center;">
+          <p class="person-title">Sarah Martinez</p>
+          <p class="person-role">Sales Director</p>
+          <p class="card-text">Sarah oversees our nationwide sales operations, ensuring every customer finds their perfect vehicle. Her expertise has earned numerous industry awards.</p>
+          <p style="color: #667eea; font-weight: 500;">sarah.martinez@bestcars.com</p>
+        </div>
+      </div>
+
+      <div class="card team-card">
+        <img class="card-img-top" src="/static/person.png" alt="David Chen" style="border-radius: 10px 10px 0 0;">
+        <div class="card-body" style="text-align: center;">
+          <p class="person-title">David Chen</p>
+          <p class="person-role">Operations Manager</p>
+          <p class="card-text">David manages our day-to-day operations and quality control. His attention to detail ensures every vehicle meets our high standards.</p>
+          <p style="color: #667eea; font-weight: 500;">david.chen@bestcars.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
+</body>
 </html>
